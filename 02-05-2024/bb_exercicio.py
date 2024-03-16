@@ -289,14 +289,23 @@ dica: return comeco,final #so deixei isso aqui pra voce lembrar como retornar 2 
 
 '''
 
-def passo_da_busca_binaria(lista,procurando,menor_i,maior_i):
+def passo_da_busca_binaria(lista, procurando, menor_i, maior_i):
+    # while menor_i <= maior_i:
+    #     mid = (menor_i + maior_i) // 2
 
-    nro_meio = numero_do_meio(lista, menor_i, maior_i)
-    idx_meio = media_arredondada(menor_i , maior_i)
-    if procurando > nro_meio:
-        return(idx_meio, maior_i)
+    #     if lista[mid] == procurando:
+    #         return menor_i, maior_i
+    #     elif lista[mid] < procurando:
+    #         menor_i = mid + 1
+    #     else:
+    #         maior_i = mid - 1
 
-    return comeco,final #so deixei isso aqui pra voce lembrar como retornar 2 numeros
+    # return menor_i, maior_i
+    pass
+
+
+    
+    #return comeco,final #so deixei isso aqui pra voce lembrar como retornar 2 numeros
 
 '''
 EXPLICACAO
@@ -460,7 +469,7 @@ class TestStringMethods(unittest.TestCase):
     def ntest_013_busca2(self): #NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
         self.verifica_codigo(busca2,'500914115a9644c76ddd282251b5331e94168b082689874a30d4b345')
     def ntest_014_busca3(self): #NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
-            self.verifica_codigo(busca3,'ab032d3bfd46b4f346ef3f3ae487a3bb142cdb3264a762e689f33992')
+        self.verifica_codigo(busca3,'ab032d3bfd46b4f346ef3f3ae487a3bb142cdb3264a762e689f33992')
 
     def test_015_passo_da_busca_binaria(self):
         lista1 = [10, 20, 30, 40, 90, 110, 400, 900, 1000, 5000, 10000, 15000]
