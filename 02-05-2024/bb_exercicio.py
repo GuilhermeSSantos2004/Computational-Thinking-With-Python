@@ -463,7 +463,7 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual(numero_do_meio(lista,3,7),407)
         self.assertEqual(numero_do_meio(lista,1,5),405)
         self.assertEqual(numero_do_meio(lista,0,5),315)
-
+#função validação comentada --> retirar n no inicio do ( )teste
     def ntest_012_busca1(self): #NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
         self.verifica_codigo(busca1,'d186920647502e420b2517c4014b1d1c923a8a962ec089db049c0307')
     def ntest_013_busca2(self): #NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN
