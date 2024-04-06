@@ -182,6 +182,19 @@ e vai fazendo isso até ordenar a lista
 Veja: https://visualgo.net/bn/sorting, opcao SEL ou SELECTION SORT
 '''
 def selectionSort(lista):
+    tamanho = len(lista)
+    
+    # Percorre a lista até a penúltima posição
+    for i in range(tamanho - 1):
+        # Encontra o índice do menor elemento na sublista a partir da posição atual
+        indice_menor = i
+        for j in range(i + 1, tamanho):
+            if lista[j] < lista[indice_menor]:
+                indice_menor = j
+        
+        # Troca o menor elemento encontrado com o elemento na posição atual
+        lista[i], lista[indice_menor] = lista[indice_menor], lista[i]
+    
     return lista
 
 
