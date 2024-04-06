@@ -156,7 +156,16 @@ Se houver mais de um menor elemento, retorne o indice menor.
 por exemplo, a=[10,40,30] indice_menor_a_partir_de(a,0) retorna 0, pois a[0]==10
 por exemplo, a=[10,40,30] indice_menor_a_partir_de(a,1) retorna 2, pois a[2]==30'''
 def indice_menor_a_partir_de(lista,posicao):
-    return 0
+    menor_elemento = lista[posicao]  # Define o primeiro elemento como o menor inicialmente
+    indice_menor = posicao  # Define o índice do menor elemento como a posição inicial
+
+    # Percorre os elementos a partir da posição especificada
+    for i in range(posicao, len(lista)):
+        if lista[i] < menor_elemento:
+            menor_elemento = lista[i]
+            indice_menor = i
+
+    return indice_menor
 
 '''implemente uma função selectionSort, 
 que recebe uma lista e devolve uma lista ordenada. 
